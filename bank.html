@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+    <header>
+        <h1>Your Bap Is Here</h1>
+    </header>
+
+    <main>
+        
+
+        <section class="box-section">
+            <div class="box" id="box-1">
+                <h3>Deposit</h3>
+                <h2 class="" >$<span id="deposit-total">00</span></h2>
+            </div>
+            <div class="box" id="box-2">            
+                <h3>Withdraw</h3>
+                <h2 class="" >$<span id="withdraw-total">00</span></h2>
+            </div>
+            <div class="box" id="box-3">               
+                <h3>Balance</h3>
+                <h2 class="" >$<span id="balance-total">00</span></h2>
+            </div>
+        </section>
+
+        <section class="error">
+            <p class="error-message " id="positive-amount">
+                Please Enter A Positive Amount...
+            </p>
+            <p class="error-message " id="enough-amount">
+                Don't Have Enough Money...
+            </p>
+        </section>
+
+        <section class="input-section">
+            <div class="input-div" id="deposit-div">
+                <h3>Please Deposit</h3>
+                <input type="text" placeholder="$ Amount you want to deposit" id="deposit-field">  <br>
+                <button id="btn-deposit" class="deposit-btn">Deposit</button>
+            </div>
+            <div class="input-div" id="withdraw-div">
+                <h3>Please Withdraw</h3>
+                <input type="text" placeholder="$ Amount you want to withdraw" id="withdraw-field"> <br>
+                <button id="btn-withdraw" class="withdraw-btn">Withdraw</button>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="./utilities.js"></script>
+    <!-- <script src="./bank.js"></script> -->
+    <script src="./functionalBank.js"></script>
+</body>
+</html>
